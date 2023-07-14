@@ -4,8 +4,7 @@ package com.rentalform.rentalform.model;
 
 import java.sql.Date;
 import java.sql.Time;
-
-
+import java.time.LocalDateTime;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -33,12 +32,10 @@ public class RentalForm {
     private String name;
     private String address ;
     private String email;
-    private Integer phone;
-   private Date takedate;
-   private Date backdate;
-    private Time taketime;
-   private Time backtime;
-    private Integer driverlicense ;
+    private String phone;
+   private LocalDateTime  Pick;
+    private LocalDateTime  drop;
+    private String driverlicense ;
   
    
 
